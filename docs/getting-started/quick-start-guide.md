@@ -24,7 +24,7 @@ To follow along with this guide you will need to have these things installed:
 - [npm](https://docs.npmjs.com/cli/) v7 or later
 - A code editor, for example [Visual Studio Code](https://code.visualstudio.com/)
 
-## Create a new API project
+## Create a new API Project
 
 Create a directory for your new API project:
 
@@ -68,7 +68,7 @@ pnpm add platformatic
 </Tabs>
 
 
-## Add a database schema
+## Add a Database Schema
 
 In your project directory (`quick-start`), create a `migrations` directory to
 store your database migration files:
@@ -98,7 +98,7 @@ You can check syntax for SQL queries on the [Database.Guide SQL Reference](https
 
 :::
 
-## Configure your API
+## Configure Your API
 
 In your project directory, create a new Platformatic configuration file named
 **`platformatic.db.json`**.
@@ -133,7 +133,7 @@ supported configuration options.
 
 :::
 
-## Start your API server
+## Start Your API Server
 
 In your project directory, use the Platformatic CLI to start your API server:
 
@@ -144,18 +144,18 @@ npx platformatic db start
 This will:
 
 1. Run your SQL migration file and create a `pages` table in the SQLite database.
-1. Automatically map your SQL database to REST and GraphQL API interfaces.
-1. Start the Platformatic API server.
+2. Automatically map your SQL database to REST and GraphQL API interfaces.
+3. Start the Platformatic API server.
 
 Your Platformatic API is now up and running! 🌟
 
-## Next steps
+## Next Steps
 
-### Use the REST API interface
+### Use the REST API Interface
 
 You can use cURL to make requests to the REST interface of your API, for example:
 
-#### Create a new page
+#### Create a new Page
 
 ```bash
 curl -X POST -H "Content-Type: application/json" \
@@ -169,7 +169,7 @@ You should receive a response from your API like this:
 {"id":1,"title":"Hello Platformatic DB"}
 ```
 
-#### Get all pages
+#### Get all Pages
 
 ```bash
 curl http://localhost:3042/pages
@@ -189,12 +189,12 @@ overview of the REST interface that the API provides.
 
 :::
 
-#### Swagger OpenAPI documentation
+#### Swagger OpenAPI Documentation
 
 You can explore the OpenAPI documentation for your REST API in the Swagger UI at
 [http://localhost:3042/documentation](http://localhost:3042/documentation)
 
-### Use the GraphQL API interface
+### Use the GraphQL API Interface
 
 Open [http://localhost:3042/graphiql](http://localhost:3042/graphiql) in your
 web browser to explore the GraphQL interface of your API.
