@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 # Quick Start Guide
 
-In this guide you'll learn how to create and run your first API with
+In this guide you will learn how to create and run your first API with
 Platformatic DB. Let's get started!
 
 :::info
@@ -18,7 +18,7 @@ Platformatic DB also supports [PostgreSQL](https://www.postgresql.org/),
 
 Platformatic supports macOS, Linux and Windows ([WSL](https://docs.microsoft.com/windows/wsl/) recommended).
 
-To follow along with this guide you'll need to have these things installed:
+To follow along with this guide you will need to have these things installed:
 
 - [Node.js](https://nodejs.org/) >= v16.17.0 or >= v18.8.0
 - [npm](https://docs.npmjs.com/cli/) v7 or later
@@ -89,7 +89,7 @@ CREATE TABLE pages (
 );
 ```
 
-When it's run by Platformatic, this query will create a new database table
+When it is run by Platformatic, this query will create a new database table
 named `pages`.
 
 :::tip
