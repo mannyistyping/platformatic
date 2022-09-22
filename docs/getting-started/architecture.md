@@ -24,5 +24,5 @@ Platformatic DB is composed of a few key libraries:
 Platformatic DB allows you to load a [Fastify plugin](https://www.fastify.io/docs/latest/Reference/Plugins/) during server startup that contains your own application-specific code.
 The plugin can add more routes or resolvers — these will automatically be shown in the OpenAPI and GraphQL schemas.
 
-SQL database migrations are also supported. They're implemented internally with the [`postgrator`](https://www.npmjs.com/package/postgrator) library.
+SQL database migrations are also supported. They are implemented internally with the [`postgrator`](https://www.npmjs.com/package/postgrator) library.
 
